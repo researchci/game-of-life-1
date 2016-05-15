@@ -13,6 +13,7 @@ public class GridReader {
         for (String row : rowValues) {
             Cell[] cellsInRow = splitIntoCells(row);
             rows.add(cellsInRow);
+            System.out.println("test");
         }
         return (Cell[][]) rows.toArray(new Cell[0][0]);
     }
@@ -32,7 +33,7 @@ public class GridReader {
     }
 
     private String[] splitIntoRows(final String gridContents) {
-        return gridContents.split(NEW_LINE);
+    	        return gridContents.split(NEW_LINE);
     }
 
 }
